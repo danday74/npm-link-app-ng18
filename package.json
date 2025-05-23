@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "link": "sh scripts/link.sh",
+    "unlink": "sh scripts/unlink.sh",
+    "view-links": "sh scripts/view-links.sh"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@ctrl/tinycolor": "^4.1.0",
+    "ng-zorro-antd": "^18.2.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "umbrella-library": "^2.3.33",
