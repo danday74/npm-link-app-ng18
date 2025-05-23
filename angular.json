@@ -62,6 +62,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 5555
+          },
           "configurations": {
             "production": {
               "buildTarget": "npm-link-app-ng18:build:production"
