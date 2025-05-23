@@ -10,7 +10,7 @@ buildDir="${libDir}/dist/${LIB_NAME}"
 if [[ -d "${libDir}" ]]; then
   echo "${prefix} found library directory ${libDir}"
   echo "${prefix} running npm install in library directory"
-  npm i
+  npm i --prefix "${libDir}"
   echo
   else
   echo "${prefix} exiting, could not find lib directory ${libDir}"
